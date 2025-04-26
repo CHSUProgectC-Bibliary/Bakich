@@ -23,7 +23,7 @@ namespace BookReviewAPI.Services
             _context = context;
             _mapper = mapper;
         }
-        public async Task<BookDto> CreateBook(CreateBookDto bookDto, CancellationToken cancellationToken)
+        public async Task<BookDto> CreateBook(CreateBookDto bookDto, CancellationToken cancellationToken) 
         {
             var book = _mapper.Map<Book>(bookDto);
             _context.Books.Add(book);
@@ -31,7 +31,7 @@ namespace BookReviewAPI.Services
             return _mapper.Map<BookDto>(book);
         }
 
-        public async Task DeleteBook(int id, CancellationToken cancellationToken)
+        public async Task DeleteBook(int id, CancellationToken cancellationToken) // не имеет смысла, так как кне используется в строках 35-39. Нужен только для отмены операции БД (либо добавлять использование, либо убрать), также ниже смсотри
         {
             var book = await _context.Books.FindAsync(id);
             if (book == null) throw new NotFoundException("Book not found");
