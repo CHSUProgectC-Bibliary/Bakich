@@ -1,21 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BookReviewAPI.Models
+namespace BookReviewAPI.Data.Entities
 {
     public class Book
     {
         [Key]
-        public int Id { get; set; }
+        public int Book_Id { get; set; }
 
-        [Required]
+        public string Section { get; set; }
+
         public string Title { get; set; }
 
-        [Required]
         public string Author { get; set; }
 
-        public string Category { get; set; }
+        public string Description { get; set; }
 
-        public List<Review> Reviews { get; set; } = new();
     }
 }
