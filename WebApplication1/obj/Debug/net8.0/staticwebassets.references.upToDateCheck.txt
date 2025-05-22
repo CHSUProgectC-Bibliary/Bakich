@@ -1,0 +1,4 @@
+C:\Users\Asus\Main\Library\Library\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Asus\Main\Library\Library\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Asus\Main\Library\Library\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Asus\Main\Library\Library\obj\Debug\net8.0\staticwebassets.build.json
